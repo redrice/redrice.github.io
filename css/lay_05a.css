@@ -1,0 +1,154 @@
+@import url(./common.css);
+@import url(./ppl_01.css);
+@import url(./cmnt_01.css);
+
+body {
+  background-color: White;
+}
+
+a {
+  color: #BB2020;
+  text-decoration: none;
+}
+
+a:hover {
+  color: Red;
+  text-decoration: underline;
+}
+
+#headDiv {
+  z-index: 2;
+  position: absolute;
+  left: 0px; 
+  top: 0px;
+  right: 0px;
+  height: 60px;
+  vertical-align: bottom;
+}
+
+#headTbl {
+  width: 100%;
+  height: 60px;
+}
+
+#headTitleTD {
+  vertical-align: bottom;
+}
+
+#headTitle {
+  text-align: left;
+  font-family: serif, Times, "Times New Roman";
+  font-size: 42pt;
+  display: inline;
+}
+
+#promoText {
+  display: inline;
+}
+
+#wisdom {
+  display: none;
+}
+
+#headBg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 35px;
+  width: 100%;
+  background-color: #DB4040;
+}
+
+#headBgTbl {
+  width: 100%;
+}
+
+#logoDiv {
+  display: none;
+}
+
+#menuABS {
+  background-color: Orange;
+}
+
+#menuDiv {
+  z-index: 5;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background-color: Red;
+}
+
+#menu {
+  width: 100%;
+  text-align: right;
+  background-color: Pink;
+  border-bottom: black solid 1px;
+  vertical-align: bottom;
+  padding-top: 4px;
+}
+
+#menuTitle {
+  display: none;
+}
+
+.menuItem {
+  display: inline;
+  padding-left: 0px;
+  padding-right: 3px;
+}
+
+.menuA {
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-right: black solid 1px;
+  border-left: black solid 1px;
+  border-top: black solid 1px;
+  color: Black;
+  text-decoration: none;
+}
+
+.menuA:hover {
+  background-color: #FFF0F0;
+  color: Black;
+  text-decoration: none;
+}
+
+#menuA-active {
+  background-color: White;
+  border-bottom: white solid 1px;
+}
+
+#mainDiv {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+#sectionTitle {
+  display: none;
+}
+
+#mainPart {
+  z-index: 3;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#content {
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  background-color: White;
+}
+
+#footer {
+  position: absolute;
+  width: 100%;
+  font-size: 10pt;
+  background-color: Black;
+  color: White;
+}

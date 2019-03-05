@@ -1,0 +1,296 @@
+@import url(./common.css);
+@import url(./ppl_01.css);
+@import url(./cmnt_01.css);
+@import url(./pieces_01.css);
+@import url(./news_01.css);
+@import url(./sw33tSC01.css);
+@import url(./bikini_01.css);
+
+html,
+body {
+  background-color: #645a5a;
+}
+
+a {
+  color: Black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: Red;
+}
+
+h3 {
+  margin-bottom: 3px;
+  margin-top: 21px;
+  font-size: 16pt;
+  font-family: sans;
+  font-weight: bold;
+  border-bottom: black solid 1px;
+}
+
+h4 {
+  margin-bottom: 3px;
+  margin-top: 21px;
+  margin-left: 7px;
+  padding-left: 7px;
+  font-size: 13pt;
+  font-family: sans;
+  font-weight: bold;
+  border-bottom: black solid 1px;
+}
+
+hr {
+  width: 70%;
+  height: 2px;
+  background: white;
+  border: 0px;
+}
+
+br.clearer {
+  clear: both;
+}
+
+/*
+img.emot:after {
+  content: attr(alt);
+}
+*/
+
+#headDiv {
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  height: 60px;
+  width: 100%;
+  vertical-align: bottom;
+  background: #5a0000 url("../graph/logo2b.png") right no-repeat;
+  color: White;
+}
+
+#headTbl {
+  width: 100%;
+  height: 60px;
+}
+
+#headTitleTD {
+  vertical-align: bottom;
+}
+
+#headTitle {
+  text-align: left;
+  font-family: serif, Times, "Times New Roman";
+  font-size: 42pt;
+  font-weight: normal;
+  display: inline;
+}
+
+#headTitleA       { color: white; }
+#headTitleA:hover { color: #e0e0e0; }
+
+#headTitleHash {
+  font-weight: bold;
+}
+
+#promoText {
+  display: inline;
+}
+
+#wisdom {
+  display: none;
+}
+
+#headBg {
+  display: none;
+}
+
+#logoDiv {
+  display: none;
+}
+
+#menuDiv {
+  z-index: 5;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width: 100%;
+}
+
+/* lamstwo !! */
+#menu {
+  width: 100%;
+  text-align: right;
+  background-color: #948d8c;
+  border-bottom: White solid 1px;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: bottom;
+  padding-top: 4px;
+}
+
+#menuTitle {
+  display: none;
+}
+
+.menuItem {
+  display: inline;
+  padding-left: 0px;
+  padding-right: 3px;
+}
+
+.menuA {
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-right: White solid 1px;
+  border-left: White solid 1px;
+  border-top: White solid 1px;
+  color: #DBB9B9;
+  text-decoration: none;
+}
+
+.menuA:hover {
+  background-color: #a6a5a1;
+  color: White;
+  text-decoration: none;
+}
+
+#menuA-active {
+  background-color: #645a5a;
+  border-bottom: #645a5a solid 1px;
+  color: White;
+}
+
+#mainDiv {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#sectionTitle {
+  display: inline;
+  margin-left: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-top: 7px;
+  padding-top: 7px;
+  padding-bottom: 2px;
+  border-bottom: black solid 1px;
+  color: white;
+  font-weight: bold;
+}
+
+#mainPart {
+  z-index: 3;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#content {
+  margin-left: 7px;
+  margin-right: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: white;
+}
+
+#footer {
+  width: 100%;
+  font-size: 8pt;
+  background-color: Black;
+  color: White;
+}
+
+#footer-copy {
+  font-size: 10pt;
+}
+
+#footer a { color: white; }
+#footer a:hover { color: red; }
+
+
+
+/******************************************/
+
+span.moreLink {
+  font-size: 8pt;
+}
+
+/** * extended BBcode classes * **/
+
+*[cite]:before {
+  content: attr(cite) ":";
+  display: block;
+}
+*[cite] {
+  display: block;
+}
+
+p.bb_paragraph, p.bb_paragpraph_initial, {
+  text-indent : 20px;
+  text-align: justify;
+}
+
+p[class~='bb_p'][class~='bb_p_initial']:first-letter,
+p.bb_paragpraph_initial:first-letter {
+  font-size: 200%;
+  font-style: italic;
+  font-weight: bold;
+  clear: left;
+  float: left;
+  border-left: black solid 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+span.spoiler {
+  color: #f0f0f0;
+  background-color: #f0f0f0;
+}
+
+span.spoiler:before {
+  content: "spoiler: ";
+  font-size: 8pt;
+  color: gray;
+  background-color: #f0f0f0;
+}
+
+img.bb_image {
+  margin: 3px;
+}
+
+blockquote {
+  background-color: silver;
+  color: black;
+}
+blockquote.ircquote {
+  font-family: monospace;
+}
+
+img[border] {
+  border-color: black;
+}
+
+div.new_pieces {
+  width: 220px;
+  border-left: black solid 1px;
+  border-right: black solid 1px;
+  padding: 5px;
+  margin: 5px;
+  float: right;
+  font-size: 9pt;
+}
+
+div.new_pieces_title {
+  font-weight: bold;
+  text-align: center;
+}
+
+span.new_pieces_date {
+  font-size: 8pt;
+}

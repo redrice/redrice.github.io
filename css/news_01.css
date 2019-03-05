@@ -1,0 +1,93 @@
+.news {
+  font-family: sans-serif, Halvetica, Tahoma, Verdana, Arial;
+  font-size: 10pt;
+  margin-bottom: 14px;
+}
+.newsTitle   { font-size: 12pt; color: black; font-weight: bold; padding-left: 14px; }
+.newsInfo    { font-size: 11pt; color: #D0D0D0; background-color: #746A6A; }
+.newsUser    { font-weight: bold; }
+.newsContent { font-size: 10pt; }
+.linkToComments { text-align: right; }
+
+.avatarDiv { width: 100px; float: left;}
+.avatar {
+  border: black solid 1px;
+  margin-left:  7px;
+  margin-right: 7px;
+  margin-top:   7px;
+}
+
+.comment {
+  font-family: sans-serif, Halvetica, Tahoma, Verdana, Arial;
+  font-size: 9pt;
+}
+.commentTitle   { font-size: 11pt; color: black; }
+.commentInfo    { font-size: 10pt; background-color: #746A6A; }
+.commentID      { font-size:  9pt; color: silver; }
+.commentNick    { font-size: 11pt; font-weight: bold; }
+.commentContent { font-size:  9pt; }
+.commentAnswer  { text-align: right; }
+#activeCmnt { background-color: #746A6A; }
+
+.comment_answer {
+  padding-left: 3px;
+  border-left:	#706868 solid 7px;
+}
+
+div.cmnts_title {
+  text-align: left;
+  color: black;
+  font-size: 13pt;
+  font-weight: bold;
+  text-align: right;
+  width: 100%;
+  border-bottom: white solid 1px;
+  margin-bottom: 14px;
+}
+
+a.showall_comments {
+  font-size: 10pt;
+}
+
+
+/* add new form */
+
+#addnew_c, .cmntAddTbl {
+  width: 100%;
+}
+
+.cmntAddLeft {
+  text-align: right;
+  vertical-align: top;
+  background-color: #948d8c;
+  width: 70px;
+}
+
+.cmntAddRight > * {
+  width: 100%;
+}
+
+#addnew_c input, #addnew_c textarea {
+  border: black solid 1px;
+}
+
+#addnew_c #cmntOpts {
+  background: silver;
+  color: black;
+  font-size: 9px;
+  text-align: right;
+}
+
+#addnew_c #cmntHelp {
+  background: Silver;
+  color: black;
+  font-size: 10px;
+}
+
+#addnew_c #cmntHelp a {
+  text-decoration: underline;
+}
+
+#addnew_c .cmntAddBtnTd {
+  text-align: right;
+}

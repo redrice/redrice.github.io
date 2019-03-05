@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif, Halvetica, Tahoma, Verdana, Arial;
+  font-size: 12pt;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+i {
+  font-family: sans, Times, "Times New Roman";
+}
+
+
+*[class~='css_useless'] {
+  display: none;
+}
+
+img.emot {
+  vertical-align: middle ;
+}
+
+.menuA {
+  text-decoration: none;
+  color: Black;
+}
+
+#footer {
+  text-align: center;
+}
+
+.pplPhoto {
+  max-width: 80px;
+}
+
+div#fatal_error, div.nonfatal_error {
+  border-top:    red solid 1px;
+  border-bottom: red solid 1px;
+}
+
+/* mark exteral links */
+a[href^="http://"] {
+  background: url("../graph/external.png") center right no-repeat;
+  padding-right: 14px;
+}
+/* not buttons */
+a[class~="ext_button"] {
+  background: none;
+  padding-right: 0px;
+}
+a[class~="ext_button"] > img {
+  border-width: 0px;
+  vertical-align: middle;
+}
+
+/* mark mailto: links */
+a[href^="mailto:"] {
+  background: url("../graph/mail.png") center right no-repeat;
+  padding-right: 14px;
+}

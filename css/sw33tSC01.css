@@ -1,0 +1,27 @@
+div[class~="sw33tSC_input_form"] {
+  text-align: center;
+}
+div[class~="sw33tSC_dicts"] {
+  width: 90%;
+  font-size: 9pt;
+  text-align: right;
+  padding: 0px;
+}
+div[class~="sw33tSC_sc"] {
+  width: 90%;
+  height: 200px;
+  padding: 4px;
+  overflow: auto;
+  border: black solid 1px;
+}
+div[class~="sw33tSC_filler"] {
+  height: 200px;
+}
+span[id^="sw33tSC_correct_word"]:hover {
+  color: black;
+}
+div[class~="sw33tSC_btnDiv"] {
+  width: 90%;
+  text-align: right;
+}
+

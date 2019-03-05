@@ -1,0 +1,57 @@
+.cmntPreview {
+  border: black solid 1px;
+}
+.cmntPreview h4 {
+  margin: 0 0 .5em;
+}
+.cmntPreview #cmntPreview_field {
+  margin: .3em;
+}
+
+#cmntTop {
+  margin-top: 7px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.cmntLink  { text-align: right; }
+
+#cmntNC {
+  text-align: center;
+  width: 100%;
+}
+
+.cmntNick {
+  font-weight: bold;
+  color: white;
+}
+.cmntInfo { font-size: 8pt; }
+.comment   {
+  margin-top: 7px;
+}
+
+.cmntsTitle {
+  text-align: left;
+  color: black;
+  font-size: 13pt;
+  font-weight: bold;
+  text-align: right;
+  width: 100%;
+  border-bottom: white solid 1px;
+}
+.cmntTitle {
+  font-family: serif;
+  font-size: 13pt;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+}
+.cmntHead  {
+  text-align: left;
+  color: #D0D0D0;
+  background-color: #746A6A;
+}
+.cmntContent {
+  text-align: left;
+  padding: 3px;
+}

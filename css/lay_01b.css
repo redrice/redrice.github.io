@@ -1,0 +1,210 @@
+@import url(./common.css);
+@import url(./ppl_01.css);
+@import url(./cmnt_01.css);
+
+body {
+  background-color: Black;
+}
+
+a {
+  color: #BB2020;
+  text-decoration: none;
+}
+
+a:hover {
+  color: Red;
+  text-decoration: underline;
+}
+
+#headDiv {
+  z-index: 2;
+  position: absolute;
+  left: 7px; 
+  top: 7px;
+  right: 14px;
+  height: 130px;
+  vertical-align: middle;
+}
+
+#headTbl {
+  width: 100%;
+  height: 130px;
+}
+
+#headBg {
+  z-index: 1;
+  position: absolute;
+  left: 7px; 
+  top: 7px;
+  right: 7px;
+  height: 130px;
+  vertical-align: middle;
+  background-color: #9b0909;
+}
+
+#headBgTbl {
+  width: 100%;
+  height: 130px;
+  border-right: black solid 7px;
+}
+
+#headTitleTD {
+  vertical-align: bottom;
+}
+
+#headTitle {
+  text-align: right;
+  font-family: serif, Times, "Times New Roman";
+  font-size: 72pt;
+  margin-left: 212px;
+  margin-right: 10px;
+}
+
+#headTitleA, #headTitle {
+  text-decoration: none;
+  color: white;
+}
+
+#promoTextTD {
+  height: 35px;
+  vertical-align: top;
+}
+
+#promoText {
+  margin-left: 212px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+#wisdom {
+  z-index: 1;
+  position: absolute;
+  top: 144px;
+  left: 7px;
+  right: 7px;
+  text-align: right;
+  background-color: Black;
+}
+
+#wisdomTbl {
+  width: 100%;
+  border: 0px;
+}
+
+#wisdomTd {
+  text-align: right;
+  font-size: 10pt;
+  color: White;
+}
+
+#logoDiv {
+  z-index: 2;
+  position: absolute;
+  left: 21px;
+  top: 21px;
+  height: 164px;
+}
+
+#logo {
+  width: 198px;
+  height: 164px;
+  background: url("../graph/logo.png");
+}
+
+#menuABS {
+  z-index: 5;
+  position: absolute;
+  top: 169px;
+  left: 7px;
+  width: 110px;
+}
+
+
+#menuDiv {
+  z-index: 5;
+  position: fixed;
+  top: 169px;
+  left: 7px;
+  width: 110px;
+  border: white solid 1px;
+  background-color: black;
+}
+
+#menu {
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+#menuTitle {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: serif, Times, "Times New Roman";
+  font-style: italic;
+  font-size: 13pt;
+}
+
+.menuItem {
+  padding-bottom: 3px;
+}
+
+.menuA {
+  text-align: center;
+  display: block;
+  border: none;
+  background-color: black;
+  color: #e30a0a;
+  font-weight: bold;
+  border-left: black solid 4px;
+  padding-left: 4px;
+  text-decoration: none;
+}
+
+.menuA:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+#menuA-active {
+  border-left: #D3D3D3 solid 4px;
+  text-decoration: none;
+}
+
+#mainDiv {
+  position: absolute;
+  top: 169px;
+  width: 100%;
+}
+
+#sectionTitle {
+  text-align: right;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #9b0909;
+  color: Black;
+}
+
+#mainPart {
+  z-index: 3;
+  margin-left: 130px;
+  margin-right: 7px;
+  background-color: White;
+  color: Black;
+}
+
+#content {
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#footer {
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 10pt;
+  background-color: Black;
+  color: White;
+}

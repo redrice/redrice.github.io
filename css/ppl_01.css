@@ -1,0 +1,33 @@
+.pplDesc {
+  /*display: table-cell;
+  vertical-align: top;*/
+  /*display: table;*/
+}
+
+.ircNick     { padding-left: 21px; padding-bottom: 7px; }
+.ircNickNick { font-weight: bold; }
+.changeDesc  { text-align: right; }
+
+.pplPhoto {
+  /*display: table-cell;*/
+  float: left;
+  display: block;
+  width: 80px;
+  text-align: center;
+  vertical-align: top;
+  padding-right: 7px;
+}
+
+.pplPhotoImg {
+  border: black solid 1px;
+}
+
+/* account settings */
+#desc_preview {
+  padding-left: 7px;
+  padding-right: 7px;  
+  padding-bottom: 21px;
+  margin-left: 21px;
+  margin-right: 21px;
+  border: silver solid 1px;
+}

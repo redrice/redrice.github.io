@@ -1,0 +1,23 @@
+{
+"lang": "pl-PL",
+"name": "#redrice :: jako moduły?",
+"short_name": "#redrice",
+"description": "jako moduly?",
+"icons": [
+    {
+    "src": "/graph/logo_s.png",
+    "sizes": "66x54",
+    "type": "image/png"
+  },
+  {
+    "src": "/graph/logo.png",
+    "sizes": "198x164",
+    "type": "image/png"
+  }
+],
+"start_url": "/?utm_source=webmanifest",
+"display": "standalone",
+"theme_color": "#5a0000",
+"background_color": "#5a0000",
+"categories": []
+}

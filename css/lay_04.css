@@ -1,0 +1,189 @@
+@import url(./common.css);
+@import url(./ppl_01.css);
+@import url(./cmnt_01.css);
+
+a {
+  color: #BB2020;
+  text-decoration: none;
+}
+
+a:hover {
+  color: Red;
+  text-decoration: underline;
+}
+
+#headDiv {
+  z-index: 2;
+  background-color: #AB1010;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  height: 80px;
+  vertical-align: bottom;
+}
+
+#headTbl {
+  width: 100%;
+  height: 80px;
+}
+
+#headBg {
+  z-index: 1;
+  position: absolute;
+  left: 0px; 
+  top: 80px;
+  right: 0px;
+  height: 30x;
+  background-color: #6B0000;
+  border-top: black solid 3px;
+}
+
+#headBgTbl {
+  width: 100%;
+}
+
+#headTitleTD {
+  vertical-align: bottom;
+}
+
+#headTitle {
+  text-align: right;
+  font-family: sans, Tahoma, Arial;
+  font-size: 72px;
+}
+
+#headTitleA, #headTitleA:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#promoTextTD {
+  height: 35px;
+  vertical-align: top;
+}
+
+#promoText {
+  display: none;
+  margin-left: 212px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+#wisdom {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 144px;
+  left: 7px;
+  right: 7px;
+  text-align: right;
+  background-color: Black;
+}
+
+#wisdomTbl {
+  width: 100%;
+  border: 0px;
+}
+
+#wisdomTd {
+  text-align: right;
+  font-size: 10pt;
+  color: White;
+}
+
+#logoDiv {
+  display: none;
+}
+
+#menuABS {
+  z-index: 5;
+  position: absolute;
+}
+
+
+#menuDiv {
+  z-index: 5;
+  position: absolute;
+  top: 117px;
+  left: 0px;
+  width: 124px;
+}
+
+#menu {
+  margin-left: 0px;
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+#menuTitle {
+  display: none;
+}
+
+.menuItem {
+  padding-bottom: 3px;
+}
+
+.menuA {
+  text-align: center;
+  display: block;
+  border: none;
+  padding-left: 7px;
+  border-right: black solid 2px;
+  border-top: black solid 2px;
+  border-bottom: black solid 2px;
+  color: Black;
+  text-decoration: none;
+}
+
+.menuA:hover {
+  background-color: #EB5050;
+  color: Black;
+  text-decoration: none;
+}
+
+#menuA-active {
+  background-color: #CB3030;
+  text-align: right;
+}
+
+#mainDiv {
+  position: absolute;
+  top: 117px;
+  width: 100%;
+}
+
+#sectionTitle {
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+  width: 500px;
+  border-bottom: black solid 2px;
+}
+
+#mainPart {
+  z-index: 3;
+  margin-left: 130px;
+  margin-right: 7px;
+  color: Black;
+}
+
+body, #mainPart {
+  background-color: #f6efef;
+}
+
+#content {
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#footer {
+  margin-left: 7x;
+  margin-right: 7px;
+  font-size: 10pt;
+  background-color: Black;
+  color: White;
+}

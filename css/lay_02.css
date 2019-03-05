@@ -1,0 +1,176 @@
+@import url(./common.css);
+@import url(./ppl_01.css);
+@import url(./cmnt_01.css);
+
+#headDiv {
+  z-index: 2;
+  position: absolute;
+  left: 7px; 
+  top: 20px;
+  right: 7px;
+  height: 96px;
+  vertical-align: middle;
+}
+
+#headTable {
+  width: 100%;
+  height: 96px;
+}
+
+#headerTitleTD {
+  vertical-align: bottom;
+}
+
+#headerTitle {
+  text-align: left;
+  font-family: serif, Times, "Times New Roman";
+  font-size: 36pt;
+  margin-left: 100px;
+  margin-right: 10px;
+}
+
+#headerTitleA, #headerTitleA:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#promoTextTD {
+  height: 20px;
+  vertical-align: top;
+}
+
+#promoText {
+  margin-left: 100px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+#wisdomTD {
+  height: 20px;
+  vertical-align: middle;
+}
+
+#wisdom {
+  margin-left: 100px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+#logoDiv {
+  z-index: 4;
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  right: 7px;
+  height: 82px;
+}
+
+#logo {
+  width: 82px;
+  height: 100;
+}
+
+#menuDiv {
+  z-index: 5;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background-color: transparent;
+}
+
+#menu {
+  width: 100%;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.menuItem {
+  display: inline;
+}
+
+#menuTitle {
+  display: none;
+}
+
+.menuItem {
+  padding-left: 15px;
+}
+
+.menuA {
+  text-align: center;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#mainDiv {
+  position: absolute;
+  top: 119px;
+  width: 100%;
+}
+
+#sectionTitle {
+  text-align: right;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#mainPart {
+  z-index: 3;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+#content {
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#footer {
+  position: absolute;
+  width: 100%;
+  font-size: 10pt;
+}
+
+/* -------------------- */
+
+/* main divs */
+#headBg {
+  background-color: Gray;
+}
+
+#menuDiv {
+  background-color: White;
+}
+
+#wisdomTD {
+  background-color: Black;
+  color: White;
+}
+
+#mainPart {
+  background-color: #9b0909;
+}
+
+#footer {
+  background-color: Black;
+  color: White;
+}
+
+
+/* menu */
+.menuA {
+  background-color: Gray;
+}
+.menuA:hover {
+  background-color: #9b0909;
+}
+
+/* mainDiv */
+#sectionTitle {
+  background-color: Black;
+  color: White;
+}

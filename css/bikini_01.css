@@ -1,0 +1,124 @@
+br[class="biki clear"] {
+  clear:		both;
+}
+
+p[class="biki"] {
+  text-indent:		10px;
+  text-align:		justify;
+}
+
+p[class="biki initial"]:first-letter {
+  font-size:		200%;
+  float:		left;
+  clear:		left;
+  font-style:		italic;
+  font-weight:		bold;
+  border-left:		black solid 2px;
+  padding-left:		2px;
+  padding-right:	2px;
+}
+
+a[class="biki"] {
+  padding-right: 14px;
+  background:		url("../graph/external.png") center right no-repeat;
+}
+
+a[class="biki"][href^="mailto:"] {
+  background:		url("../graph/mail.png") center right no-repeat;
+}
+
+blockquote[class~="biki"] > cite {
+  display:		block;
+  font-size:		8.5pt;
+  background-color:	#909090;
+  border-left:		silver solid 2px;
+  margin:		0;
+  padding:		0 0.3em;
+}
+
+blockquote[class~="biki"] > p {
+  background-color:	silver;
+  border-left:		#909090 solid 2px;
+  margin:		0;
+  padding:		0.3em;
+  overflow:		auto;
+}
+
+span[class="biki code filename"] {
+  background-color:	#909090;
+  font-family:		monospace;
+}
+
+code[class="biki"] {
+  background-color:	silver;
+  border-left-color:	#909090;
+  white-space:		nowrap;
+}
+
+span[class="biki spoiler"]:before {
+  content:		"spoiler: ";
+  font-size:		8pt;
+  color:		gray;
+  background-color:	#f0f0f0;
+}
+
+span[class="biki spoiler"] {
+  color:		#f0f0f0;
+  background-color:	#f0f0f0;
+}
+
+h1[class="biki"] {
+  text-align:		left;
+  font-size:		24pt;
+  text-weight:		bold;
+  border:		none;
+  background-color:	none;
+  margin:		14px 7px;
+  padding:		0px;
+}
+
+h2[class="biki"] {
+  text-align:		left;
+  font-size:		20pt;
+  text-weight:		bold;
+  border:		none;
+  background-color:	none;
+  margin:		14px 7px;
+  padding:		0px;
+}
+
+h3[class="biki"] {
+  text-align:		left;
+  font-size:		16pt;
+  text-weight:		bold;
+  border:		none;
+  background-color:	none;
+  margin:		14px 7px;
+  padding:		0px;
+}
+
+h4[class="biki"] {
+  text-align:		left;
+  font-size:		12pt;
+  text-weight:		bold;
+  border:		none;
+  background-color:	none;
+  margin:		14px 7px;
+  padding:		0px;
+}
+
+div[class~="biki"][class~="notes"]:before {
+  display:		block;
+  border-top:           silver solid 1px;
+  content:		' ';
+  overflow:		hidden;
+  max-width:		30em;
+  margin:		0 auto;
+}
+div[class~="biki"][class~="notes"] {
+  margin:		0 5em;
+  font-size:		9pt;
+}
+div[class~="biki"][class~="notes"] > p {
+  margin:		0;
+}

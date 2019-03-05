@@ -1,0 +1,49 @@
+@import url(./common.css);
+
+a {
+  color: Black;
+}
+
+#logoDiv, #wisdom, #menuDiv {
+  display: none;
+}
+
+.cmntAddTbl {
+  display: none;
+}
+.cmntInfo { font-size: 8pt; }
+.cmntNick { font-weight: bold; }
+
+#headDiv, #headTbl {
+  width: 100%;
+}
+
+#headTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 36pt;
+}
+
+#headTitleA { text-decoration: none; }
+
+#promoText {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#sectionTitle {
+  text-align: right;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#mainPart {
+  z-index: 3;
+}
+
+#footer {
+  margin-left: 130px;
+  margin-right: 7px;
+  font-size: 10pt;
+}

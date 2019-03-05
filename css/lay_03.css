@@ -1,0 +1,199 @@
+@import url(./common.css);
+@import url(./ppl_01.css);
+@import url(./cmnt_01.css);
+
+body {
+  background-color: Black;
+}
+
+a {
+  color: #BB2020;
+  text-decoration: none;
+}
+
+a:hover {
+  color: Red;
+  text-decoration: underline;
+}
+
+#headDiv {
+  z-index: 2;
+  position: absolute;
+  background-color: #9b0909;
+  left: 7px; 
+  top: 7px;
+  right: 14px;
+  height: 185px;
+  width: 110px;
+  vertical-align: top;
+  border: white solid 1px;
+}
+
+#headTbl {
+  width: 110px;
+  height: 130px;
+  padding-top: 55px;
+}
+
+#headBg {
+  display: none;
+}
+
+#headTitleTD {
+  vertical-align: middle;
+}
+
+#headTitle {
+  text-align: left;
+  font-family: serif, Times, "Times New Roman";
+  font-size: 24pt;
+  color: white;
+  margin: 7px;
+}
+
+#headTitleA, #headTitleA:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#promoTextTD {
+  height: 35px;
+  vertical-align: top;
+}
+
+#promoText {
+  margin: 7px;
+  text-align: right;
+}
+
+#wisdom {
+  z-index: 10;
+  position: absolute;
+  top: 32px;
+  height: 20px;
+  left: 130px;
+  right: 7px;
+  text-align: right;
+  background-color: Black;
+}
+
+#wisdomTbl {
+  width: 100%;
+  border: 0px;
+}
+
+#wisdomTd {
+  text-align: right;
+  font-size: 10pt;
+  color: White;
+}
+
+#logoDiv {
+  z-index: 7;
+  position: absolute;
+  left: 7px;
+  top: 14px;
+  width: 110px;
+  height: 55px;
+  text-align: center;
+}
+
+#logo {
+  width: 66px;
+  height: 55px;
+  left: 21px;
+  position: absolute;
+  background-image: url("../graph/logo_s.png");
+}
+
+#menuABS {
+  z-index: 5;
+  position: absolute;
+}
+
+
+#menuDiv {
+  z-index: 5;
+  position: absolute;
+  top: 198px;
+  left: 7px;
+  width: 110px;
+  border: white solid 1px;
+  background-color: black;
+}
+
+#menu {
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+#menuTitle {
+  display: none;
+}
+
+.menuItem {
+  padding-bottom: 3px;
+}
+
+.menuA {
+  text-align: center;
+  display: block;
+  border: none;
+  background-color: black;
+  color: #e30a0a;
+  font-weight: bold;
+  padding-left: 4px;
+  text-decoration: none;
+  border: black solid 1px;
+}
+
+.menuA:hover {
+  color: red;
+  text-decoration: none;
+  border: white solid 1px;
+}
+
+#menuA-active {
+  color: white;
+  border: black solid 1px;
+}
+
+#mainDiv {
+  position: absolute;
+  top: 7px;
+  width: 100%;
+}
+
+#sectionTitle {
+  height: 44px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #9b0909;
+  color: Black;
+}
+
+#mainPart {
+  z-index: 3;
+  margin-left: 130px;
+  margin-right: 7px;
+  background-color: White;
+  color: Black;
+}
+
+#content {
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#footer {
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 10pt;
+  background-color: Black;
+  color: White;
+}

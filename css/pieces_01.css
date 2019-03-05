@@ -1,0 +1,118 @@
+.pieces_pager, .pieces_pager_prev, .pieces_pager_next {
+  font-size: 9pt;
+}
+.pieces_pager      { text-align: center; }
+.pieces_pager_prev { text-align: left;  padding-top:    7px; }
+.pieces_pager_next { text-align: right; padding-bottom: 7px; }
+
+.piecesImage {
+  text-align: center;
+}
+
+.piecesImage a > img {
+  /*padding: 1px;*/
+  border-width: 1px;
+}
+
+.piecesImage a:hover > img {
+  border-width: 1px;
+}
+
+.piece, .pieces_dir {
+  padding-bottom: 14px;
+  width: 100%;
+  clear: both;
+}
+
+.pieces_dirTitle, .piece_title {
+  font-weight: bold;
+}
+
+.pieces_dirDates, .piece_date{
+  font-size: 8pt;
+}
+
+div.pieces_dirDesc {
+  font-size: 9pt;
+}
+
+#piece_title, h3.piece_title {
+  text-align: right;
+  margin-bottom: 14px;
+  padding-right: 7px;
+  font-size: 16pt;
+  font-family: sans;
+  font-weight: bold;
+  border-bottom: black solid 1px;
+}
+
+#piece_desc, .piece_view_desc {
+  margin-top: 21px;
+  padding-top: 7px;
+  border-top: black solid 1px;
+}
+
+.piece_actions {
+  text-align: right;
+  font-size: 10pt;
+  clear: both;
+}
+
+.pieces_back {
+  padding-bottom: 14px;
+}
+
+.pieces_back_bottom {
+  padding-top: 14px;
+}
+
+.pieces_img, .piece_thumb {
+  float: left;
+  margin: 7px;
+  border: black solid 1px;
+  clip: rect(10px, 5px, 10px, 5px);
+}
+
+a:hover > .pieces_img, a:hover > .piece_thumb {
+  border: red solid 1px;
+}
+
+.pieces_txt_preview {
+  width:    80px;
+  height:   80px;
+  border:   black solid 1px;
+  float:    left;
+  overflow: hidden;
+  margin:   7px;
+  padding:  2px;
+}
+
+.pieces_txt_preview_inside {
+  width:    300px;
+}
+
+.pieces_txt_preview_pre {
+  margin-top: 0px;
+  font-size:  8pt;
+}
+
+div[class~='piece_view_image'],
+div[class~='piece_view_preview_image'],
+div[class~='piece_view_download'] {
+  text-align: center;
+}
+
+div[class~='piece_view_plain'] > iframe {
+  background-color: #d0d0d0;
+}
+
+div[class~='piece_view_download'] > a:first-child {
+  background: url("../graph/download.png") center 2px no-repeat;
+  padding-top: 67px;
+  text-align: center;
+  display: block;
+  border: black solid 1px;
+}
+div[class~='piece_view_download'] > a:first-child:hover {
+  border: red dotted 1px;
+}

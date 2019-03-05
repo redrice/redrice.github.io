@@ -1,0 +1,21 @@
+img {
+  display: none;
+}
+body {
+  font-family: monospace, "Andale Mono", Courier, "Courier New", Fixed;
+  color: silver;
+  background-color: black;
+}
+a, a:visited, a:link {
+  color: white;
+}
+#menuTitle, #sectionTitle, #headerTitle {
+  color: white;
+  font-weight: bold;
+}
+#headTbl      { width: 100%;        }
+#headDiv      { text-align: right;  }
+#menu         { text-align: center; }
+#sectionTitle { text-align: right;  }
+#footer       { text-align: center; }
+.menuItem     { display: inline;    }
