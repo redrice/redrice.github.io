@@ -1,106 +1,32 @@
-<!DOCTYPE html>
-<html lang="pl-PL" prefix="og: http://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8">
-    <link rel="manifest" href="./manifest.json">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>#redrice :: jako moduły?</title>
-    <meta name="description" content="jako moduły?">
-    <meta property="og:url" content="https://redrice.github.io/">
-    <meta property="og:title" content="#redrice">
-    <meta property="og:description" content="jako moduły?">
-    <meta property="og:image" content="https://redrice.github.io/graph/logo.png">
-    <link rel="icon" type="image/png" href="/graph/logo.png">
-    <meta name="theme-color" content="#5a0000">
-    <link rel="stylesheet" href="./css/lay_05b.css">
+---
+layout: default
+title: "#redrice :: jako moduły"
+activeMenuItem: main
+---
+<p class="biki initial">
+  Witaj nieszczęsny internauto, któremu dane było trafić na tą stronę! G'woli wyjaśnienia: jeśli nie wiesz gdzie się znalazleś czuję się zobowiązany powiadomić, że jest to oficjalna strona kanału #redrice @ irc.<a href="http://freenode.net/">freenode.net</a>.
+  Kanał ten jest niezobowiązującą wspólnotą społeczno-internetową, a jeśli nią nie jest to powinien, ponieważ nieźle to brzmi :Pi
+</p>
 
-    <style type="text/css">
-      <!--
-      /* fixx external links */
-      a[href^="https://redrice.github.io/"] {
-        background: none;
-        padding-right: 0px;
-      }
-      -->
-    </style>
-  </head>
+<br class="clearer">
 
-  <body>
-    <div id="headDiv">
-      <table id="headTbl">
-        <tr><td id="headTitleTD">
-          <h1 id="headTitle">
-            <a href="/" id="headTitleA"><span id="headTitleHash">#</span>redrice</a>
-          </h1>
-          <div id="promoText">wortal miłośników czerwonego ryżu.</div>
-        </td></tr>
-      </table>
+<div class="cmnts_title" id="cmnts_news">
+  news?
+</div>
+
+{% for post in site.categories.news %}
+  <div class="news"{% if post.legacyCommentId %} id="c{{ post.legacyCommentId }}" {% endif %}>
+    <div class="newsTitle">
+      {{ post.title }}
     </div>
-
-    <div id="menuDiv">
-      <div id="menu" align="center">
-        <div id="menuTitle">
-          menu
-        </div>
-        <span class="menuItem">
-          <a href="/" title="strona główna, newsy" class="menuA" id="menuA-active">main();</a></span><span class="menuItem">
-          <a href="/quotes" title="najciekawsze teksty z kanału" class="menuA">quotes</a></span><span class="menuItem">
-      </div>
+    <img src="/usersdata/avatar_{{ post.author }}.png" width="80" align="left" class="avatar" alt="{{ post.author }}">
+    <div class="newsInfo">
+      <span class="newsUser">{{ post.author }}</span>,
+      {% include time.html date=post.date %}
     </div>
-
-
-    <div id="mainDiv">
-      <div id="mainPart">
-        <div id="sectionTitle">
-          redrice.github.io
-        </div>
-
-        <div id="content">
-          <p class="biki initial">
-            Witaj nieszczęsny internauto, któremu dane było trafić na tą stronę! G'woli wyjaśnienia: jeśli nie wiesz gdzie się znalazleś czuję się zobowiązany powiadomić, że jest to oficjalna strona kanału #redrice @ irc.<a href="http://freenode.net/">freenode.net</a>.
-            Kanał ten jest niezobowiązującą wspólnotą społeczno-internetową, a jeśli nią nie jest to powinien, ponieważ nieźle to brzmi :Pi
-          </p>
-
-          <br class="clearer">
-
-          <div class="cmnts_title" id="cmnts_news">
-            news?
-          </div>
-
-          <div class="news" id="c178">
-            <div class="newsTitle">
-              you all thought we were dead…
-            </div>
-            <img src="/usersdata/avatar_saji.png" width="80" align="left" class="avatar" alt="saji">
-            <div class="newsInfo">
-              <span class="newsUser">saji</span>,
-              <time>2019-03-04 23:37:00</time>
-            </div>
-            <div class="newsContent">
-              Na razie ręcznie zanimowane szczątki strony.
-              W planach:
-
-              <ul style="overflow: auto">
-                <li>wciągnięcie HTML’a i CSS’a w XXI wiek</li>
-                <li>zarzężenie jakiegoś jekyll’a do pomocy</li>
-                <li>przywrócenie pozostałych treści: quote’y, newsy, komentarze</li>
-                <li>dodanie przycisków
-                  <i lang="en">comment-by-<abbr title="pull request">PR</abbr></i>
-                </li>
-              </ul>
-              <img src="/assets/its-alive.gif" alt="It’s alive! ALIVE!">
-            </div>
-            <br class="clearer">
-          </div>
-        </div>
-
-        <div id="footer">
-          <span id="footer-copy">
-            © 2oo3 saji
-          </span>
-          <a href="https://github.com/redrice/redrice.github.io/blob/master/index.html">show source</a>
-        </div>
-      </div>
+    <div class="newsContent">
+      {{ post.content }}
     </div>
-  </body>
-</html>
+    <br class="clearer">
+  </div>
+  {% endfor %}

@@ -1,0 +1,8 @@
+title: "#redrice"
+description: "jako moduły?"
+url: https://redrice.github.io
+safe: true
+exclude:
+    - Gemfile
+    - Gemfile.lock
+strict_front_matter: true

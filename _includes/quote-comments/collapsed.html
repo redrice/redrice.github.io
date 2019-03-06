@@ -1,0 +1,8 @@
+{% assign pageCategory = include.quote.id | replace_first: "/quotes/", "" | replace: "/", "-" %}
+
+<div class="linkToComments">
+  <a href="{{ include.quote.url }}#comments">
+    komentarze
+    ({{ site.categories[pageCategory] | size }})
+  </a>
+</div>

@@ -1,0 +1,22 @@
+<div class="comment"{% if include.comment.legacyCommentId %} id="c{{ include.comment.legacyCommentId }}"{% endif %}>
+  <div class="commentTitle">
+    {% if include.comment.legacyCommentId %}
+      <span class="commentID">[{{include.comment.legacyCommentId}}]</span>
+    {% endif %}
+    {{ include.comment.title }}
+  </div>
+  <div class="commentInfo">
+    <span class="commentNick">{{ include.comment.author }}</span>,
+    {% include time.html date=include.comment.date %}
+    {% if include.comment.legacyHost %}
+      ,
+      {{ include.comment.legacyHost }},
+    {% endif %}
+    {% if include.comment.legacyAgent %}
+      {{ include.comment.legacyAgent }}
+    {% endif %}
+  </div>
+  <div class="commentContent">
+    {{ include.comment.content }}
+  </div>
+</div>

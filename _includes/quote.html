@@ -1,0 +1,24 @@
+<div class="news"{% if include.quote.legacyCommentId %} id="c{{ include.quote.legacyCommentId }}"{% endif %}>
+  <div class="newsTitle">
+    <a href="{{ include.quote.url }}">{{ include.quote.title }}</a>
+  </div>
+  <div class="newsInfo">
+    {% if include.quote.legacyCommentId %}
+      <span class="commentID">
+        [{{ include.quote.legacyCommentId }}]
+      </span>
+    {% endif %}
+    <cite class="newsNick">{{ include.quote.citedAuthor }}</cite>
+    (<span class="newsUser">{{ include.quote.author }}</span>),
+    {% include time.html date=include.quote.date %}
+  </div>
+  <div class="newsContent">
+    {{ include.quote.content }}
+  </div>
+  {% if include.comments %}
+    {% include quote-comments/expanded.html quote=include.quote %}
+  {% else %}
+    {% include quote-comments/collapsed.html quote=include.quote %}
+  {% endif %}
+  <br class="clearer">
+</div>

@@ -1,0 +1,77 @@
+---
+---
+<!DOCTYPE html>
+<html lang="pl-PL" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:url" content="https://redrice.github.io/">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="https://redrice.github.io/graph/logo.png">
+    <link rel="icon" type="image/png" href="/graph/logo.png">
+    <meta name="theme-color" content="#5a0000">
+    <link rel="stylesheet" href="/css/lay_05b.css">
+
+    <style type="text/css">
+      <!--
+      /* fixx external links */
+      a[href^="https://redrice.github.io/"] {
+        background: none;
+        padding-right: 0px;
+      }
+      -->
+    </style>
+  </head>
+
+  <body>
+    <div id="headDiv">
+      <table id="headTbl">
+        <tr><td id="headTitleTD">
+          <h1 id="headTitle">
+            <a href="/" id="headTitleA"><span id="headTitleHash">#</span>redrice</a>
+          </h1>
+          <div id="promoText">wortal miłośników czerwonego ryżu.</div>
+        </td></tr>
+      </table>
+    </div>
+
+    <div id="menuDiv">
+      <div id="menu" align="center">
+        <div id="menuTitle">
+          menu
+        </div>
+        <span class="menuItem">
+          <a href="/" title="strona główna, newsy" class="menuA"{% if page.activeMenuItem == "main" %} id="menuA-active"{% endif %}>main();</a></span><span class="menuItem">
+          <a href="/quotes" title="najciekawsze teksty z kanału" class="menuA"{% if page.activeMenuItem == "quotes" %} id="menuA-active"{% endif %}>quotes</a></span><span class="menuItem">
+      </div>
+    </div>
+
+
+    <div id="mainDiv">
+      <div id="mainPart">
+        <div id="sectionTitle">
+          {% if page.activeMenuItem == "main" or page.activeMenuItem == nil %}
+            redrice.github.io
+          {% else %}
+            <a href="/">redrice.github.io</a> » {{ page.activeMenuItem }}
+          {% endif %}
+        </div>
+
+        <div id="content">
+          {{ content }}
+        </div>
+
+        <div id="footer">
+          <span id="footer-copy">
+            © 2oo3 saji
+          </span>
+          <a href="https://github.com/redrice/redrice.github.io/blob/master/{{ page.path }}">show source</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

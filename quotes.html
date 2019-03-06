@@ -1,129 +1,51 @@
-<!DOCTYPE html>
-<html lang="pl-PL" prefix="og: http://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>#redrice :: jako moduły?</title>
-    <meta name="description" content="jako moduły?">
-    <meta property="og:url" content="https://redrice.github.io/">
-    <meta property="og:title" content="#redrice">
-    <meta property="og:description" content="jako moduły?">
-    <meta property="og:image" content="https://redrice.github.io/graph/logo.png">
-    <link rel="icon" type="image/png" href="/graph/logo.png">
-    <meta name="theme-color" content="#5a0000">
-    <link rel="stylesheet" href="/css/lay_05b.css">
+---
+layout: default
+title: "#redrice :: jako moduły"
+activeMenuItem: quotes
+---
+<div class="cmnts_title" id="cmnts_quotes">
+  memorable quotes
+</div>
 
-    <style type="text/css">
-      <!--
-      /* fixx external links */
-      a[href^="https://redrice.github.io/"] {
-        background: none;
-        padding-right: 0px;
-      }
-      -->
-    </style>
-  </head>
+{% for post in site.categories.quotes %}
+  {% unless post.categories contains 'comments' %}
+    {% include quote.html quote=post comments=false %}
+  {% endunless %}
+{% endfor %}
 
-  <body>
-    <div id="headDiv">
-      <table id="headTbl">
-        <tr><td id="headTitleTD">
-          <h1 id="headTitle">
-            <a href="/" id="headTitleA"><span id="headTitleHash">#</span>redrice</a>
-          </h1>
-          <div id="promoText">wortal miłośników czerwonego ryżu.</div>
-        </td></tr>
-      </table>
-    </div>
+<div class="news" id="c194">
+  <div class="newsTitle">
+    [jabber] po co kobiety
+  </div>
+  <div class="newsInfo">
+    <span class="commentID">[194]</span>
+    <span class="newsNick">strim, saji</span>
+    (<span class="newsUser">ftape</span>),
+    <time>2007-09-29 17:25:08</time>
+  </div>
+  <div class="newsContent">
+    <blockquote class="biki quote"><cite></cite><p>[05:12:44 PM] &lt;saji&gt; tego mi na pewno będzie brakować, jak się kiedyś wyprowadzę w końcu... magicznie robiące się obiady, prania etc... d;<br>
+      [05:21:53 PM] &lt;strim&gt; brakuje tego<br>
+      [05:22:00 PM] &lt;strim&gt; dlatego trzeba znalezc foke</p></blockquote>
+  </div>
+  <br class="clearer">
+</div>
 
-    <div id="menuDiv">
-      <div id="menu" align="center">
-        <div id="menuTitle">
-          menu
-        </div>
-        <span class="menuItem">
-          <a href="/" title="strona główna, newsy" class="menuA">main();</a></span><span class="menuItem">
-          <a href="/quotes" title="najciekawsze teksty z kanału" class="menuA" id="menuA-active">quotes</a></span><span class="menuItem">
-      </div>
-    </div>
+<center>
+  <big><tt>[...192 quotes truncated...]</tt></big>
+</center>
+<br>
+<br>
 
-
-    <div id="mainDiv">
-      <div id="mainPart">
-        <div id="sectionTitle">
-          <a href="/">redrice.github.io</a> » quotes
-        </div>
-
-        <div id="content">
-          <div class="cmnts_title" id="cmnts_quotes">
-            memorable quotes
-          </div>
-
-          <div class="news" id="c195">
-            <div class="newsTitle">
-              HOPE BASED DEVELOPMENT
-            </div>
-            <div class="newsInfo">
-              <span class="commentID">[195]</span>
-              <span class="newsNick">strim</span>
-              (<span class="newsUser">saji</span>),
-              <time>2019-03-05 23:53:00</time>
-            </div>
-            <div class="newsContent">
-              <blockquote class="biki quote"><cite></cite><p>
-                15:59  &lt;rkujawa&gt; i ma na dzieje, że będzie działać
-                16:00  &lt;rkujawa&gt; HOPE BASED DEVELOPMENT
-              </p></blockquote>
-            </div>
-            <br class="clearer">
-          </div>
-
-          <div class="news" id="c194">
-            <div class="newsTitle">
-              [jabber] po co kobiety
-            </div>
-            <div class="newsInfo">
-              <span class="commentID">[194]</span>
-              <span class="newsNick">strim, saji</span>
-              (<span class="newsUser">ftape</span>),
-              <time>2007-09-29 17:25:08</time>
-            </div>
-            <div class="newsContent">
-              <blockquote class="biki quote"><cite></cite><p>[05:12:44 PM] &lt;saji&gt; tego mi na pewno będzie brakować, jak się kiedyś wyprowadzę w końcu... magicznie robiące się obiady, prania etc... d;<br>
-                [05:21:53 PM] &lt;strim&gt; brakuje tego<br>
-                [05:22:00 PM] &lt;strim&gt; dlatego trzeba znalezc foke</p></blockquote>
-            </div>
-            <br class="clearer">
-          </div>
-
-          <center>
-            <big><tt>[...192 quotes truncated...]</tt></big>
-          </center>
-          <br>
-          <br>
-
-          <div class="news" id="c1">
-            <div class="newsInfo">
-              <span class="commentID">[1]</span>
-              <span class="newsNick">baczka</span>
-              (<span class="newsUser">baczka</span>),
-              <time>2004-06-13 15:41:13</time>
-            </div>
-            <div class="newsContent">
-              <blockquote class="biki ircquote"><cite class="biki"></cite><p><code> 17:38 &lt; baka&gt; strim|awy: jako moduly?</code></p></blockquote>
-            </div>
-            <br class="clearer">
-          </div>
-        </div>
-
-        <div id="footer">
-          <span id="footer-copy">
-            © 2oo3 saji
-          </span>
-          <a href="https://github.com/redrice/redrice.github.io/blob/master/quotes.html">show source</a>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+<div class="news" id="c1">
+  <div class="newsInfo">
+    <span class="commentID">[1]</span>
+    <span class="newsNick">baczka</span>
+    (<span class="newsUser">baczka</span>),
+    <time>2004-06-13 15:41:13</time>
+  </div>
+  <div class="newsContent">
+    <blockquote class="biki ircquote"><cite class="biki"></cite><p><code> 17:38 &lt; baka&gt; strim|awy: jako moduly?</code></p></blockquote>
+  </div>
+  <br class="clearer">
+</div>

@@ -1,0 +1,10 @@
+{% assign pageCategory = include.quote.id | replace_first: "/quotes/", "" | replace: "/", "-" %}
+{% assign sortedPosts = site.posts | sort: "date" %}
+
+<div id="comments">
+  {% for comment in sortedPosts %}
+    {% if comment.categories contains pageCategory and comment.categories contains 'comments' %}
+      {% include comment.html comment=comment %}
+    {% endif %}
+  {% endfor %}
+</div>
