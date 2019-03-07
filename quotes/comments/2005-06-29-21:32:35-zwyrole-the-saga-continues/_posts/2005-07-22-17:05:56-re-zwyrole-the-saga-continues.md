@@ -9,4 +9,4 @@ legacyHost: "127.0.0.1"
 legacyUserAgent: "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.8) Gecko/20050520 Firefox/1.0.4"
 ---
 
-k?ot wyedytowany pod naciskiem tofa ;}
+kłot wyedytowany pod naciskiem tofa ;}
